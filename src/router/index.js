@@ -5,6 +5,10 @@ import Event from '@/components/Event'
 
 Vue.use(Router)
 
+const EventProps = {
+  title: 'vuex 없이 상태관리 해보기'
+}
+
 export default new Router({
   routes: [
     {
@@ -15,7 +19,8 @@ export default new Router({
     {
       path: '/event',
       name: 'Event',
-      component: Event
+      component: Event,
+      props: EventProps
     }
   ]
 })

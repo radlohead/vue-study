@@ -9,7 +9,6 @@
         <router-link to="/event">event</router-link>
       </li>
     </ul>
-    <app-event v-bind:title="title"></app-event>
     <router-view/>
   </div>
 </template>
@@ -21,11 +20,6 @@ export default {
   name: "App",
   components: {
     "app-event": Event
-  },
-  data() {
-    return {
-      title: "vuex 없이 상태관리 해보기"
-    };
   }
 };
 </script>
