@@ -5,6 +5,10 @@ import Event from '@/components/Event'
 
 Vue.use(Router)
 
+const HelloWorldProps = {
+  title: 'HelloWorld title!'
+}
+
 const EventProps = {
   title: 'vuex 없이 상태관리 해보기'
 }
@@ -14,7 +18,8 @@ export default new Router({
     {
       path: '/',
       name: 'HelloWorld',
-      component: HelloWorld
+      component: HelloWorld,
+      props: HelloWorldProps
     },
     {
       path: '/event',
