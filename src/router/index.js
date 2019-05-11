@@ -13,6 +13,13 @@ const EventProps = {
   title: 'vuex 없이 상태관리 해보기'
 }
 
+const numFunc = route => {
+  console.log('numFunc: ', route)
+  return {
+    num: route.params.num
+  }
+}
+
 export default new Router({
   routes: [
     {
@@ -26,6 +33,12 @@ export default new Router({
       name: 'Event',
       component: Event,
       props: EventProps
+    },
+    {
+      path: '/event/:num',
+      name: 'Event',
+      component: Event,
+      props: numFunc
     }
   ]
 })

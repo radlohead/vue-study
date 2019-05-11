@@ -8,6 +8,12 @@
       <li>
         <router-link to="/event">event</router-link>
       </li>
+      <li>
+        <router-link to="/event/1">event 1</router-link>
+      </li>
+      <li>
+        <router-link to="/event/2">event 2</router-link>
+      </li>
     </ul>
     <router-view/>
   </div>

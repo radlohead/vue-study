@@ -2,6 +2,7 @@
   <section class="wrapper">
     wrapper
     <h1>{{ title }}</h1>
+    <h2>{{ num }}</h2>
   </section>
 </template>
 
@@ -9,7 +10,8 @@
 export default {
   name: "Event",
   props: {
-    title: String
+    title: String,
+    num: String
   }
 };
 </script>
