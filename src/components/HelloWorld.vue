@@ -3,6 +3,7 @@
     <h2>{{ title }}</h2>
     <a v-bind:href="testUrl">test link</a>
     <p v-html="testUrlLink"></p>
+    <input type="text" v-model="message">
   </div>
 </template>
 
@@ -14,9 +15,15 @@ export default {
   },
   data() {
     return {
+      message: "watch input test",
       testUrl: "https://www.naver.com",
       testUrlLink: "<a href='https://www.naver.com'>test url link</a>"
     };
+  },
+  watch: {
+    message(data) {
+      console.log(`'message의 값이 바뀝니다.' ${data}`);
+    }
   }
 };
 </script>
