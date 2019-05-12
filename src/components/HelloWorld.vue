@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
     <h2>{{ title }}</h2>
     <a v-bind:href="testUrl">test link</a>
     <p v-html="testUrlLink"></p>
@@ -15,7 +14,6 @@ export default {
   },
   data() {
     return {
-      msg: "Welcome to Your Vue.js App",
       testUrl: "https://www.naver.com",
       testUrlLink: "<a href='https://www.naver.com'>test url link</a>"
     };
